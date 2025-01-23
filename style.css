@@ -1,0 +1,87 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+}
+
+
+/* Clock Container */
+
+.clock-container {
+    text-align: center;
+}
+
+
+/* Analog Clock */
+
+.analog-clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background: #333;
+    margin: 0 auto 20px;
+}
+
+
+/* Clock Hands */
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(0deg);
+    transition: transform 0.05s cubic-bezier(0.4, 2.3, 0.3, 1);
+}
+
+
+/* Hour Hand */
+
+.hour-hand {
+    width: 6px;
+    height: 50px;
+    background: #fff;
+    z-index: 3;
+}
+
+
+/* Minute Hand */
+
+.minute-hand {
+    width: 4px;
+    height: 70px;
+    background: #fff;
+    z-index: 2;
+}
+
+
+/* Second Hand */
+
+.second-hand {
+    width: 2px;
+    height: 90px;
+    background: red;
+    z-index: 1;
+}
+
+
+/* Digital Clock */
+
+.digital-clock {
+    font-size: 24px;
+    color: #fff;
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
